@@ -22,10 +22,38 @@ ul {
     margin: 0;
     padding: 0;
 }
+.overview {
+    margin-bottom: 20px;
+}
 .weather-app {
     max-width: 600px;
     margin: 30px auto;
     padding: 20px;
     border: 1px solid #f76b8a;
     border-radius: 5px;
+}
+.weather-app-wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+}
+.weather-details {
+    margin-top: 20px;
+}
+.weather-temperature i {
+margin-right: 10px;
+margin-bottom: 10px;
+font-size: 85px;
+}
+.weather-temperature strong {
+    color: black;
+    font-weight: 300;
+    font-size: 65px;
+    line-height: 1;
+}
+.weather-temperature .units {
+    color: black;
+    position: relative;
+    font-size: 16px;
+    top: -35px;
+
 }

@@ -17,29 +17,40 @@
 </head>
 <body>
     <div class="container">
+        <div class="weather-app-wrapper">
         <div class="weather-app">
+            <div class="overview">
     <h1>New York</h1>
     <ul>
         <li>Tuesday 14:00</li>
         <li>Clear</li>
     </ul>
+    </div>
     <div class="row">
         <div class="col-md-6">
-            <i class="fa-solid fa-sun" alt="sun"></i>
-            80°F | °C
+            <div class="clearfix weather-temperature">
+            <i class="fa-solid fa-sun float-left"></i>
+            <span class="float-left">
+            <strong>80</strong>
+            <span class="units">°F | <a href="#">°C</a></span>
+            </span>
+            </div>
         </div>
         <div class="col-md-6">
+            <div class="weather-details">
             <ul>
                 <li>Precipitation: 0%</li>
                 <li>Humidity: 73%</li>
                 <li>Wind: 5 mph</li>
             </ul>
+            </div>
         </div>
     </div>
-    <small>
-        <a href="https://github.com/abugbee11/Vanilla-Weather-App" target="_blank">Open source code </a> by Adrienne Bugbee
-    </small>
     </div>
+        <small>
+            <a href="https://github.com/abugbee11/Vanilla-Weather-App" target="_blank">Open source code </a> by Adrienne Bugbee
+        </small>
+        </div>
 </div>
     <script src="src/app.js"></script>
 </body>
