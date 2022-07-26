@@ -1,7 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
-
+a {
+    text-decoration: solid;
+}
 h1 {
     color: #f76b8a;
     font-size: 24px;
@@ -46,6 +48,13 @@ ul {
 }
 .weather-details {
     margin-top: 20px;
+}
+.weather-temperature .active {
+    color: black;
+    cursor: default;
+}
+.weather-temperature .active:hover{
+    text-decoration: none;
 }
 .weather-temperature img {
 margin-right: 10px;
