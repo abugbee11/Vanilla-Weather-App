@@ -17,6 +17,7 @@ li {
     font-size: 16px;
     font-weight: 100;
     line-height: 19px;
+    text-transform: capitalize;
 }
 ul {
     margin: 0;
@@ -55,5 +56,4 @@ font-size: 85px;
     position: relative;
     font-size: 16px;
     top: -35px;
-
 }

@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/b35e615412.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
         <link rel="stylesheet" href="src/style.css" />
     <title>Worldwide Weather</title>
 </head>
@@ -20,10 +21,10 @@
         <div class="weather-app-wrapper">
         <div class="weather-app">
             <div class="overview">
-    <h1>New York</h1>
+    <h1 id="city">New York</h1>
     <ul>
         <li>Tuesday 14:00</li>
-        <li>Clear</li>
+        <li id="description"></li>
     </ul>
     </div>
     <div class="row">
@@ -31,7 +32,7 @@
             <div class="clearfix weather-temperature">
             <i class="fa-solid fa-sun float-left"></i>
             <span class="float-left">
-            <strong>80</strong>
+            <strong id="temperature"></strong>
             <span class="units">°F | <a href="#">°C</a></span>
             </span>
             </div>
@@ -39,9 +40,8 @@
         <div class="col-md-6">
             <div class="weather-details">
             <ul>
-                <li>Precipitation: 0%</li>
-                <li>Humidity: 73%</li>
-                <li>Wind: 5 mph</li>
+                <li>Humidity: <span id="humidty"></span>%</li>
+                <li>Wind: <span id="wind"></span> mph</li>
             </ul>
             </div>
         </div>
