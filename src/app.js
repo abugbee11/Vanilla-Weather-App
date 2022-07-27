@@ -23,13 +23,11 @@ return days[day];
 function getForecast(coordinates) {
     let apiKey = "5e473a47031564c5f9eebba301f1dd8c";
     let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
-    console.log(apiUrl);
     axios.get(apiUrl).then(displayForecast);
 
 }
 
 function displayTemperature(response) {
-    console.log(response.data.daily);
     let temperatureElement = document.querySelector("#temperature");
     let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
@@ -95,7 +93,7 @@ function displayForecast(response) {
                 <img src="https://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png" alt="" class="forecast-image"/>
             <div class="weather-forecast-temperatures">
                 <span class="weather-forecast-temperature-max">
-                    ${Math.round(forecastDay.temp.max)}°
+                    <strong>${Math.round(forecastDay.temp.max)}°</strong>
                 </span>
                 <span class="weather-forecast-temperature-min">
                     ${Math.round(forecastDay.temp.min)}°
