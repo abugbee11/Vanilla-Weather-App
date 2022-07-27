@@ -20,12 +20,8 @@ li {
     font-weight: 100;
     line-height: 19px;
 }
-li::first-letter{
+li:first-letter{
     text-transform: capitalize;
-}
-img {
-    width: 100px;
-    height: 100px;
 }
 ul {
     margin: 0;
@@ -71,4 +67,26 @@ margin-bottom: 10px;
     position: relative;
     font-size: 16px;
     top: -35px;
+}
+.weather-forecast {
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+.weather-forecast-date {
+font-size: 16px;
+opacity: 0.5;
+}
+.weather-forecast-temperature-min {
+    opacity: 0.5;
+}
+.weather-forecast-temperatures {
+    font-size: 13px;
+}
+img.forecast-image {
+    width: 42px;
+}
+#icon {
+    width: 100px;
+    height: 100px;
 }
